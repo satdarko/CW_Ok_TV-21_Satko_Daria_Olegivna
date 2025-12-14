@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#263238">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADMIN CONTROL PANEL"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:text="Emergency Controls"
+            android:textColor="#B0BEC5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            
+            <Button
+                android:id="@+id/btnShutdownGroup"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Shutdown Group"
+                android:backgroundTint="#F44336"
+                android:layout_marginEnd="5dp"/>
+
+            <Button
+                android:id="@+id/btnShutdownAll"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="SHUTDOWN ALL"
+                android:backgroundTint="#B71C1C"
+                android:layout_marginStart="5dp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnRestore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RESTORE POWER (CANCEL EMERGENCY)"
+            android:backgroundTint="#4CAF50"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:text="System Management"
+            android:textColor="#B0BEC5"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnCreateAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="➕ Create New Address"
+            android:backgroundTint="#2196F3"/>
+
+        <Button
+            android:id="@+id/btnManageGenerators"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⚡ Manage Generators (Status/Mode)"
+            android:backgroundTint="#FF9800"/>
+
+        <Button
+            android:id="@+id/btnManageSchedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📅 Edit Outage Schedules"
+            android:backgroundTint="#673AB7"/>
+        
+        <Button
+            android:id="@+id/btnViewSchedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="👁️ View Group Schedule"
+            android:backgroundTint="#009688"/>
+
+        <TextView
+            android:text="Monitoring"
+            android:textColor="#B0BEC5"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnLogs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View System Logs"
+            android:backgroundTint="#607D8B"/>
+
+        <TextView
+            android:id="@+id/tvConsole"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#000000"
+            android:textColor="#00FF00"
+            android:fontFamily="monospace"
+            android:padding="8dp"
+            android:textSize="12sp"
+            android:scrollbars="vertical"
+            android:layout_marginTop="10dp"
+            android:text="> System ready..."/>
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:backgroundTint="#FF0000"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+</ScrollView>

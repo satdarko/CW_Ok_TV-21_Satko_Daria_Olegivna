@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center">
+
+    <TextView android:text="EMERGENCY POWER SYSTEM" android:textSize="24sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    
+    <EditText android:id="@+id/etLogin" android:hint="Login" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <EditText android:id="@+id/etPass" android:hint="Password" android:inputType="textPassword" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+	<CheckBox
+    android:id="@+id/cbShowPass"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Show Password"
+    android:layout_marginTop="8dp"/>
+    
+    <Button android:id="@+id/btnLogin" android:text="Log In" android:layout_marginTop="16dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:id="@+id/tvStatus" android:text="" android:textColor="#F44336" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>
